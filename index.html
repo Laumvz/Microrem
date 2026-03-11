@@ -59,12 +59,11 @@ button:hover{
 background:#1d8ed6;
 }
 
-.ref{
-background:white;
-margin:15px;
-padding:15px;
-border-radius:10px;
+.footer{
 text-align:center;
+padding:20px;
+font-size:16px;
+color:#555;
 }
 
 </style>
@@ -84,93 +83,27 @@ text-align:center;
 <div class="container">
 
 <div class="card">
-<h3>Registro Idealz</h3>
-<p>Regístrate y usa el código:<br><b>JDWTJVM1LUST</b></p>
-<button onclick="task('https://www.idealz.com.mx/',5)">
-Hacer tarea (+5)
-</button>
-</div>
-
-<div class="card">
-<h3>Microsoft Rewards</h3>
-<p>Completa actividades y gana puntos.</p>
-<button onclick="task('https://rewards.bing.com/',3)">
-Ir a la tarea (+3)
-</button>
-</div>
-
-<div class="card">
-<h3>GrabPoints</h3>
-<p>Completa encuestas y ofertas para ganar puntos.</p>
-<button onclick="task('https://grabpoints.com?ref=QN4JET',4)">
+<h3>TopSurveys</h3>
+<p>Responde encuestas y gana dinero.</p>
+<button onclick="task('https://topsurveys.app/register?ref=a14621b1-8536-46b9-8740-02e6f910ebff',4)">
 Ir a la tarea (+4)
 </button>
 </div>
 
 <div class="card">
-<h3>Clickworker</h3>
-<p>Gana dinero con encuestas, fotos, videos y pruebas de apps.</p>
-<button onclick="task('https://clickworker.app/Pe034p',5)">
-Ir a la tarea (+5)
-</button>
-</div>
-
-<div class="card">
 <h3>Freecash</h3>
-<p>Completa tareas y gana recompensas.</p>
-<button onclick="task('https://freecash.com/',4)">
+<p>Completa juegos, encuestas y ofertas.</p>
+<button onclick="task('https://freecash.com/r/2H1Z3O',4)">
 Ir a la tarea (+4)
 </button>
 </div>
 
 <div class="card">
 <h3>ySense</h3>
-<p>Responde encuestas y gana dinero.</p>
-<button onclick="task('https://www.ysense.com/',4)">
+<p>Responde encuestas y gana recompensas.</p>
+<button onclick="task('https://www.ysense.com/?rb=140200330',4)">
 Ir a la tarea (+4)
 </button>
 </div>
 
-</div>
-
-<div class="ref">
-
-<h3>👥 Invita amigos</h3>
-<p>Comparte tu bot y gana más usuarios.</p>
-
-<button onclick="shareBot()">
-Compartir bot
-</button>
-
-</div>
-
-<script>
-
-let points = 0;
-
-function task(url,reward){
-
-window.open(url,"_blank");
-
-points += reward;
-
-document.getElementById("points").innerText = points;
-
-}
-
-function shareBot(){
-
-let botLink="https://t.me/TU_BOT";
-
-window.open("https://t.me/share/url?url="+botLink);
-
-}
-
-if(window.Telegram && Telegram.WebApp){
-Telegram.WebApp.expand();
-}
-
-</script>
-
-</body>
-  </html>
+<div class="
