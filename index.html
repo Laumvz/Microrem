@@ -26,6 +26,13 @@ padding:15px;
 margin:0;
 }
 
+.stats{
+background:white;
+padding:10px;
+margin:10px;
+border-radius:10px;
+}
+
 .card{
 background:white;
 margin:15px;
@@ -35,7 +42,6 @@ border-radius:10px;
 
 .logo{
 width:60px;
-margin-bottom:10px;
 }
 
 button{
@@ -59,19 +65,11 @@ color:#555;
 
 <h2>💰 Microtareas</h2>
 
-<div class="card">
+<div class="stats">
 
-<img class="logo" src="https://www.topsurveys.app/favicon.ico">
-
-<h3>TopSurveys</h3>
-
-<p>Responde encuestas.</p>
-
-<a href="https://topsurveys.app/register?ref=a14621b1-8536-46b9-8740-02e6f910ebff" target="_blank">
-
-<button>Ir a la tarea</button>
-
-</a>
+👥 Usuarios: <span id="users"></span>  
+<br>
+✅ Tareas completadas: <span id="tasks"></span>
 
 </div>
 
@@ -85,7 +83,7 @@ color:#555;
 
 <a href="https://freecash.com/r/2H1Z3O" target="_blank">
 
-<button>Ir a la tarea</button>
+<button onclick="task()">Ir a la tarea</button>
 
 </a>
 
@@ -101,7 +99,7 @@ color:#555;
 
 <a href="https://www.ysense.com/?rb=140200330" target="_blank">
 
-<button>Ir a la tarea</button>
+<button onclick="task()">Ir a la tarea</button>
 
 </a>
 
@@ -117,7 +115,7 @@ color:#555;
 
 <a href="https://grabpoints.com?ref=QN4JET" target="_blank">
 
-<button>Ir a la tarea</button>
+<button onclick="task()">Ir a la tarea</button>
 
 </a>
 
@@ -133,7 +131,7 @@ color:#555;
 
 <a href="https://clickworker.app/Pe034p" target="_blank">
 
-<button>Ir a la tarea</button>
+<button onclick="task()">Ir a la tarea</button>
 
 </a>
 
@@ -144,6 +142,21 @@ color:#555;
 📢 Comparte este bot con tus amigos.
 
 </div>
+
+<script>
+
+let users = Math.floor(Math.random()*500)+800;
+let tasks = Math.floor(Math.random()*3000)+2000;
+
+document.getElementById("users").innerText = users;
+document.getElementById("tasks").innerText = tasks;
+
+function task(){
+tasks++;
+document.getElementById("tasks").innerText = tasks;
+}
+
+</script>
 
 </body>
 
